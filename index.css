@@ -1,0 +1,117 @@
+
+
+body {
+
+background-image: url(index_background.jpg);
+
+background-position: center center;
+
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
+background-size: cover;
+
+}
+
+div.månad {
+
+   text-align: center;
+ 
+}
+
+
+
+ul {
+align-content: center;
+
+list-style-type: none;
+
+margin: 0;
+
+padding: 0;
+
+overflow: hidden;
+
+background-color: gray;
+
+
+
+}
+
+li {
+
+float: left;
+
+
+}
+
+li a:hover{
+    background-color: black;
+}
+
+li a {
+
+display: block;
+
+color: white;
+
+text-align:center;
+
+padding: 52px;
+
+text-decoration: none;
+
+}
+
+h1 {
+
+color: rgb(206, 126, 21);
+
+}
+
+div.rad1 {
+width: 100%; 
+overflow:auto;   
+
+}
+div.rad1 div{
+    width: 25%;
+    float:left;
+}
+
+table, td {
+
+border: 1px solid black;
+
+
+}
+
+h1 {
+
+text-align: center;
+
+}
+
+div.rad2 {
+    width: 100%; 
+    overflow:auto;   
+
+    align-content: center;
+    
+    }
+div.rad2 div{
+        width: 25%;
+        float:left;
+}
+
+div.rad3 {
+    width: 100%; 
+    overflow:auto;   
+    
+    }
+div.rad3 div{
+        width: 25%;
+        float:left;
+}
+
