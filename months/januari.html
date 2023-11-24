@@ -38,7 +38,7 @@
         border-radius: 5px;
       }
       .divcalender {
-        background-color: rgba(214, 226, 124, 0.900);
+        background-color: rgba(255, 255, 255, 0.6);
         border-radius: 20px;
         width: 55%;
         height: 500px;
@@ -53,9 +53,10 @@
       }
       .links-sub {
         border-radius: 5px;
-        background-color: rgb(108, 8, 202);
+        background-color: rgb(241, 181, 102);
         -webkit-text-fill-color: aliceblue;
-        width: 25px;
+        width: 50px;
+        height: 40px;
       }
       .links-sub-current {
         border-radius: 5px;
@@ -65,7 +66,7 @@
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: ;">
     <div class="backdrop">
     <div class="divcalender">
     <section id="calender"></section>
@@ -153,7 +154,14 @@
 
   </div>
 </div>
+<script>
+  function playSound() {
+      var audio = new Audio('..\soundboard\pop-39222.mp3');
+      audio.play();
+  }
 
+  window.onload = playSound;
+</script>
     <script src="" async defer></script>
   </body>
 </html>
