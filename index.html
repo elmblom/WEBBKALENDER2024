@@ -875,7 +875,15 @@
     
     
       </footer>
-    
+      <audio id="myAudio" src="../soundboard/soundtrack.wav" preload="auto" muted loop></audio>
+
+      <script>
+          window.addEventListener('load', function() {
+              var audio = document.getElementById('myAudio');
+              audio.muted = false;
+              audio.play();
+          });
+      </script>
         <script src="" async defer></script>
     </body>
 </html>
