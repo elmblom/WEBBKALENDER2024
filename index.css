@@ -72,9 +72,18 @@ color: rgb(206, 126, 21);
 
 div.rad1 {
 width: 100%; 
-overflow:auto;   
+overflow:auto; 
+
 
 }
+
+div.rad1 table{
+
+margin: 0 auto;
+
+}
+
+
 div.rad1 div{
     width: 25%;
     float:left;
@@ -83,6 +92,8 @@ div.rad1 div{
 table, td {
 
 border: 1px solid black;
+
+
 
 
 }
@@ -105,24 +116,55 @@ div.rad2 div{
         float:left;
 }
 
+div.rad2 table{
+
+    margin: 0 auto;
+    
+    }
+
 div.rad3 {
     width: 100%; 
     overflow:auto;   
     
     }
+
 div.rad3 div{
         width: 25%;
         float:left;
 }
 
+div.rad3 table{
+
+    margin: 0 auto;
+    
+    }
+
 div.HEHÖ {
 
-width: 100%;
-overflow: auto;
+
+text-align: center;
 
 }
-div.HEHÖ div{
 
-float: left;
+
+div.HEHÖ ul li{
+
+display: inline-block;
+margin: 0 auto;
+padding: 0;
+display: inline;   
+
 
 }
+
+div.HEHÖ li{
+
+    border: 1px solid black;
+}
+
+
+
+ 
+
+
+
