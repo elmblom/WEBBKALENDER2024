@@ -28,7 +28,13 @@
       .date {
         background-color: rgb(66, 143, 130);
         border-radius: 5px;
-      }
+        height:75px;
+        }
+        .date-special {
+        background-color: rgb(170, 20, 10);
+        border-radius: 5px;
+        height:75px;
+        }
       .day {
         width: 5%;
       }
@@ -37,11 +43,16 @@
         background-color: gray;
         border-radius: 5px;
       }
+      .nextmonth-date-special {
+        color: goldenrod;
+        background-color: rgb(100, 20, 10);
+        border-radius: 5px;
+      }
       .divcalender {
         background-color: rgba(255, 255, 255, 0.6);
         border-radius: 20px;
         width: 55%;
-        height: 500px;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
@@ -65,6 +76,16 @@
         height: 30px;
         width: 30px;
       }
+      .weekend {
+        width: 5%;
+      color: red;
+      }
+      .week{
+        background-color:darkslategrey;
+        border-radius: 5px;
+        height:75px;
+        width: 3%;
+      }
     </style>
   </head>
   <body>
@@ -76,58 +97,64 @@
       </h1>
       <table class="center" style="height: 80%; width: 90%">
         <tr>
+          <th></th>
           <th class="day">Mån</th>
           <th class="day">Tis</th>
           <th class="day">Ons</th>
           <th class="day">Tors</th>
           <th class="day">Fre</th>
-          <th class="day">Lör</th>
-          <th class="day">Sön</th>
+          <th class="weekend">Lör</th>
+          <th class="weekend">Sön</th>
         </tr>
         <tr>
+          <th class="week">22</th>
           <th class="date">1</th>
           <th class="date">2</th>
           <th class="date">3</th>
           <th class="date">4</th>
           <th class="date">5</th>
           <th class="date">6</th>
-          <th class="date">7</th>
+          <th class="date-special">7</th>
         </tr>
         <tr>
+          <th class="week">23</th>
           <th class="date">8</th>
           <th class="date">9</th>
           <th class="date">10</th>
           <th class="date">11</th>
           <th class="date">12</th>
           <th class="date">13</th>
-          <th class="date">14</th>
+          <th class="date-special">14</th>
         </tr>
         <tr>
+          <th class="week">24</th>
           <th class="date">15</th>
           <th class="date">16</th>
           <th class="date">17</th>
           <th class="date">18</th>
           <th class="date">19</th>
           <th class="date">20</th>
-          <th class="date">21</th>
+          <th class="date-special">21</th>
         </tr>
         <tr>
-          <th class="date">22</th>
+          <th class="week">25</th>
+          <th class="date-special">22</th>
           <th class="date">23</th>
           <th class="date">24</th>
           <th class="date">25</th>
           <th class="date">26</th>
           <th class="date">27</th>
-          <th class="date">28</th>
+          <th class="date-special">28</th>
         </tr>
         <tr>
+          <th class="week">26</th>
           <th class="date">29</th>
           <th class="date">30</th>
           <th class="date">31</th>
           <th class="nextmonth-date">1</th>
           <th class="nextmonth-date">2</th>
           <th class="nextmonth-date">3</th>
-          <th class="nextmonth-date">4</th>
+          <th class="nextmonth-date-special">4</th>
         </tr>
       </table>
     </section>
