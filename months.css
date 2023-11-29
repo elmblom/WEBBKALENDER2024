@@ -4,7 +4,7 @@
 }
 
 .date {
-  background-color: rgb(66, 143, 130);
+  background-color: #0F2568;
   border-radius: 5px;
   height: 75px;
   color: white;
@@ -12,7 +12,7 @@
 
 
 .date-special {
-  background-color: rgb(170, 20, 10);
+  background-color:#C32851;
   border-radius: 5px;
   height: 75px;
   color: white;
@@ -20,27 +20,26 @@
 
 .day {
   width: 5%;
-  background-color: #009562;
+  background-color: #894B99;
   border-radius: 3px;
 }
 
 .weekend {
   width: 5%;
-  color: #aa140a;
-  background-color: #009562;
+  background-color: #894B99;
   border-radius: 3px;
   padding: 3px;
 }
 
 .nextmonth-date {
-  color: goldenrod;
-  background-color: gray;
+  color: #ECD500;
+  background-color: #6286CE;
   border-radius: 5px;
   padding: 3px;
 }
 
 .nextmonth-date-special {
-  color: goldenrod;
+  color: #ECD500;
   background-color: rgb(100, 20, 10);
   border-radius: 5px;
 }
@@ -103,7 +102,7 @@
 
 
 .week {
-  background-color: darkslategrey;
+  background-color: #0F675F;
   border-radius: 5px;
   height: 75px;
   width: 3%;
