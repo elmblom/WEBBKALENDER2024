@@ -1,0 +1,20 @@
+div.menu {
+
+height: 200%;
+width: 75%;
+background-color: red;
+float: left;
+
+}
+
+div.bild {
+
+height: 100%;
+width: 25%;
+background-image: url(/pictures/julmenu/huvudsida.png);
+position: absolute;
+z-index: 1;
+overflow: auto;
+float: left;
+
+}
