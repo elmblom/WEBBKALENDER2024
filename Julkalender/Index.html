@@ -5,164 +5,213 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
   </head>
   <style>
     .grid-container {
-      display:grid;
-      column-gap: 8px;
-      row-gap: 8px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  display: grid;
+  gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
 
-    .grid-item {
-      text-align: center;
-      padding: 20px;
-      font-size: 30px;
-      border-radius: 7px;
-    }
-    .text {
-      background-color: blueviolet;
-      text-align: left;
-      font-size: 21px;
-    }
-    .body {
-      background-image: url(../pictures/december.png);
-    }
-    .item1 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item2 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item3 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item4 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item5 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item6 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item7 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item8 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item9 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item10 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item11 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item12 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item13 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item14 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item15 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item16 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item17 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item18 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item19 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item20 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item21 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item22 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item23 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-    }
-    .item24 {
-      font-family: monospace;
-      background-color: rgb(236, 56, 56);
-      margin: px;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 7px;
+  transition: all 1s ease;
+}
+
+.text{
+  grid-column: 1 ;
+  grid-row: 1 / span 2;
+  background-color: transparent;
+  color: aliceblue;
+}
+.item1{
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  background-color: #FF2C35;
+}
+.item2{
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  background-color: #00803D;
+}
+.item3{
+  grid-column: 5 / span 1;
+  grid-row: 1;
+  background-color: #FF2C35;
+}
+.item4{
+  grid-column: 1 / span 1;
+  grid-row: 3;
+  background-color: #00803D;
+}
+.item5{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+  background-color: #FF2C35;
+}
+.item6{
+  grid-column: 3 / span 1;
+  grid-row: 2;
+  background-color: #FF2C35;
+}
+.item7{
+  grid-column: 4 / span 1;
+  grid-row: 2;
+  background-color: #00803D;
+}
+.item8{
+  grid-column: 5 / span 1;
+  grid-row: 2;
+  background-color: #00803D;
+}
+.item9{
+  grid-column: 3 / span 1;
+  grid-row: 3;
+  background-color: #FF2C35;
+}
+.item10{
+  grid-column: 4 / span 1;
+  grid-row: 3;
+  background-color: #FF2C35;
+}
+.item11{
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 2;
+  background-color: #00803D;
+}
+.item12{
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  background-color: #FF2C35;
+}
+.item13{
+  grid-column: 1 / span 1;
+  grid-row: 5;
+  background-color: #00803D;
+}
+.item14{
+  grid-column: 2 / span 1;
+  grid-row: 5;
+  background-color: #FF2C35;
+}
+.item15{
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 2;
+  background-color: #00803D;
+}
+.item16{
+  grid-column: 4 / span 1;
+  grid-row: 4;
+  background-color: #FF2C35;
+}
+.item17{
+  grid-column: 4 / span 2;
+  grid-row: 5;
+  background-color: #FF2C35;
+}
+.item18{
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 2;
+  background-color: #FF2C35;
+}
+.item19{
+  grid-column: 2 / span 1;
+  grid-row: 6;
+  background-color: #00803D;
+}
+.item20{
+  grid-column: 3 / span 2;
+  grid-row: 6;
+  background-color: #FF2C35;
+}
+.item21{
+  grid-column: 5 / span 1;
+  grid-row: 6;
+  background-color: #00803D;
+}
+.item22{
+  grid-column: 2 / span 1;
+  grid-row: 7;
+  background-color: #00803D;
+}
+.item23{
+  grid-column: 3 / span 1;
+  grid-row: 7;
+  background-color: #FF2C35;
+}
+.item24{
+  grid-column: 4 / span 2;
+  grid-row: 7;
+  background-color: #00803D;
+}
+.red:hover{
+background-color:#FF4D55 ;
+transform: scale(1.07);
+animation: shake 0.7s ease-in-out infinite;
+}
+.green:hover{
+background-color: #00B362;
+transform: scale(1.07);
+animation: shake 0.7s ease-in-out infinite;
+}
+@keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25%, 75% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(5px);
+      }
     }
   </style>
-  <body class="body">
+  <body style="background-image: url(../pictures/julcalback.jpg);">
     <div class="grid-container">
       <div class="grid-item text">
-        <p style="color: red">Christmas</p>
-        <p style="color: green">Calendar</p>
+        <p>Christmas</p>
+        <p>Calendar</p>
       </div>
-      <div class="grid-item item1">1</div>
-      <div class="grid-item item2">2</div>
-      <div class="grid-item item3">3</div>
-      <div class="grid-item item4">4</div>
-      <div class="grid-item item5">5</div>
-      <div class="grid-item item6">6</div>
-      <div class="grid-item item7">7</div>
-      <div class="grid-item item8">8</div>
-      <div class="grid-item item9">9</div>
-      <div class="grid-item item10">10</div>
-      <div class="grid-item item11">11</div>
-      <div class="grid-item item12">12</div>
-      <div class="grid-item item13">13</div>
-      <div class="grid-item item14">14</div>
-      <div class="grid-item item15">15</div>
-      <div class="grid-item item16">16</div>
-      <div class="grid-item item17">17</div>
-      <div class="grid-item item18">18</div>
-      <div class="grid-item item19">19</div>
-      <div class="grid-item item20">20</div>
-      <div class="grid-item item21">21</div>
-      <div class="grid-item item22">22</div>
-      <div class="grid-item item22">23</div>
-      <div class="grid-item item24">24</div>
+      <div class="grid-item item1 red">1</div>
+      <div class="grid-item item2 green">2</div>
+      <div class="grid-item item3 red">3</div>  
+      <div class="grid-item item4 green">4</div>
+      <div class="grid-item item5 red">5</div>
+      <div class="grid-item item6 red">6</div>
+      <div class="grid-item item7 green">7</div>
+      <div class="grid-item item8 green">8</div>
+      <div class="grid-item item9 red">9</div>
+      <div class="grid-item item10 red">10</div>
+      <div class="grid-item item11 green">11</div>
+      <div class="grid-item item12 red">12</div>
+      <div class="grid-item item13 green">13</div>
+      <div class="grid-item item14 red">14</div>
+      <div class="grid-item item15 green">15</div>
+      <div class="grid-item item16 red">16</div>
+      <div class="grid-item item17 red">17</div>
+      <div class="grid-item item18 red">18</div>
+      <div class="grid-item item19 green">19</div>
+      <div class="grid-item item20 red">20</div>
+      <div class="grid-item item21 green">21</div>
+      <div class="grid-item item22 green">22</div>
+      <div class="grid-item item23 red">23</div>
+      <div class="grid-item item24 green">24</div>
     </div>
+    <script src="" async defer></script>
   </body>
 </html>
