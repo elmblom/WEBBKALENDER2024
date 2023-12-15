@@ -5,183 +5,774 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
   </head>
   <style>
     .grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: transparent;
-  padding: 10px;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-}
+      display: grid;
+      gap: 10px;
+      background-color: transparent;
+      padding: 10px;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 80px;
+    }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
-  border-radius: 7px;
-  transition: all 1s ease;
-}
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      border-radius: 7px;
+      transition: all 1s ease;
+    }
 
-.text{
-  grid-column: 1 ;
-  grid-row: 1 / span 2;
-  background-color: transparent;
-  color: aliceblue;
-}
-.item1{
-  grid-column: 2 / span 1;
-  grid-row: 1;
-  background-color: #FF2C35;
-}
-.item2{
-  grid-column: 3 / span 2;
-  grid-row: 1;
-  background-color: #00803D;
-}
-.item3{
-  grid-column: 5 / span 1;
-  grid-row: 1;
-  background-color: #FF2C35;
-}
-.item4{
-  grid-column: 1 / span 1;
-  grid-row: 3;
-  background-color: #00803D;
-}
-.item5{
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 2;
-  background-color: #FF2C35;
-}
-.item6{
-  grid-column: 3 / span 1;
-  grid-row: 2;
-  background-color: #FF2C35;
-}
-.item7{
-  grid-column: 4 / span 1;
-  grid-row: 2;
-  background-color: #00803D;
-}
-.item8{
-  grid-column: 5 / span 1;
-  grid-row: 2;
-  background-color: #00803D;
-}
-.item9{
-  grid-column: 3 / span 1;
-  grid-row: 3;
-  background-color: #FF2C35;
-}
-.item10{
-  grid-column: 4 / span 1;
-  grid-row: 3;
-  background-color: #FF2C35;
-}
-.item11{
-  grid-column: 5 / span 1;
-  grid-row: 3 / span 2;
-  background-color: #00803D;
-}
-.item12{
-  grid-column: 1 / span 2;
-  grid-row: 4;
-  background-color: #FF2C35;
-}
-.item13{
-  grid-column: 1 / span 1;
-  grid-row: 5;
-  background-color: #00803D;
-}
-.item14{
-  grid-column: 2 / span 1;
-  grid-row: 5;
-  background-color: #FF2C35;
-}
-.item15{
-  grid-column: 3 / span 1;
-  grid-row: 4 / span 2;
-  background-color: #00803D;
-}
-.item16{
-  grid-column: 4 / span 1;
-  grid-row: 4;
-  background-color: #FF2C35;
-}
-.item17{
-  grid-column: 4 / span 2;
-  grid-row: 5;
-  background-color: #FF2C35;
-}
-.item18{
-  grid-column: 1 / span 1;
-  grid-row: 6 / span 2;
-  background-color: #FF2C35;
-}
-.item19{
-  grid-column: 2 / span 1;
-  grid-row: 6;
-  background-color: #00803D;
-}
-.item20{
-  grid-column: 3 / span 2;
-  grid-row: 6;
-  background-color: #FF2C35;
-}
-.item21{
-  grid-column: 5 / span 1;
-  grid-row: 6;
-  background-color: #00803D;
-}
-.item22{
-  grid-column: 2 / span 1;
-  grid-row: 7;
-  background-color: #00803D;
-}
-.item23{
-  grid-column: 3 / span 1;
-  grid-row: 7;
-  background-color: #FF2C35;
-}
-.item24{
-  grid-column: 4 / span 2;
-  grid-row: 7;
-  background-color: #00803D;
-}
-.red:hover{
-background-color:#FF4D55 ;
-transform: scale(1.07);
-animation: shake 0.7s ease-in-out infinite;
-}
-.green:hover{
-background-color: #00B362;
-transform: scale(1.07);
-animation: shake 0.7s ease-in-out infinite;
-}
-@keyframes shake {
-      0%, 100% {
+    .text {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      background-color: transparent;
+      color: aliceblue;
+    }
+    .item1 {
+      grid-column: 2 / span 1;
+      grid-row: 1;
+      background-color: #ff2c35;
+    }
+    .item2 {
+      grid-column: 3 / span 2;
+      grid-row: 1;
+      background-color: #00803d;
+    }
+    .item3 {
+      grid-column: 5 / span 1;
+      grid-row: 1;
+      background-color: #ff2c35;
+    }
+    .item4 {
+      grid-column: 1 / span 1;
+      grid-row: 3;
+      background-color: #00803d;
+    }
+    .item5 {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 2;
+      background-color: #ff2c35;
+    }
+    .item6 {
+      grid-column: 3 / span 1;
+      grid-row: 2;
+      background-color: #ff2c35;
+    }
+    .item7 {
+      grid-column: 4 / span 1;
+      grid-row: 2;
+      background-color: #00803d;
+    }
+    .item8 {
+      grid-column: 5 / span 1;
+      grid-row: 2;
+      background-color: #00803d;
+    }
+    .item9 {
+      grid-column: 3 / span 1;
+      grid-row: 3;
+      background-color: #ff2c35;
+    }
+    .item10 {
+      grid-column: 4 / span 1;
+      grid-row: 3;
+      background-color: #ff2c35;
+    }
+    .item11 {
+      grid-column: 5 / span 1;
+      grid-row: 3 / span 2;
+      background-color: #00803d;
+    }
+    .item12 {
+      grid-column: 1 / span 2;
+      grid-row: 4;
+      background-color: #ff2c35;
+    }
+    .item13 {
+      grid-column: 1 / span 1;
+      grid-row: 5;
+      background-color: #00803d;
+    }
+    .item14 {
+      grid-column: 2 / span 1;
+      grid-row: 5;
+      background-color: #ff2c35;
+    }
+    .item15 {
+      grid-column: 3 / span 1;
+      grid-row: 4 / span 2;
+      background-color: #00803d;
+    }
+    .item16 {
+      grid-column: 4 / span 1;
+      grid-row: 4;
+      background-color: #ff2c35;
+    }
+    .item17 {
+      grid-column: 4 / span 2;
+      grid-row: 5;
+      background-color: #ff2c35;
+    }
+    .item18 {
+      grid-column: 1 / span 1;
+      grid-row: 6 / span 2;
+      background-color: #ff2c35;
+    }
+    .item19 {
+      grid-column: 2 / span 1;
+      grid-row: 6;
+      background-color: #00803d;
+    }
+    .item20 {
+      grid-column: 3 / span 2;
+      grid-row: 6;
+      background-color: #ff2c35;
+    }
+    .item21 {
+      grid-column: 5 / span 1;
+      grid-row: 6;
+      background-color: #00803d;
+    }
+    .item22 {
+      grid-column: 2 / span 1;
+      grid-row: 7;
+      background-color: #00803d;
+    }
+    .item23 {
+      grid-column: 3 / span 1;
+      grid-row: 7;
+      background-color: #ff2c35;
+    }
+    .item24 {
+      grid-column: 4 / span 2;
+      grid-row: 7;
+      background-color: #00803d;
+    }
+    .red:hover {
+      background-color: #ff4d55;
+    }
+    .green:hover {
+      background-color: #00b362;
+    }
+
+    .item1:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge1 1s ease-in-out forwards 1.3s;
+    }
+    .item2:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge2 1s ease-in-out forwards 1.3s;
+    }
+
+    .item3:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge3 1s ease-in-out forwards 1.3s;
+    }
+
+    .item4:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge4 1s ease-in-out forwards 1.3s;
+    }
+
+    .item5:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge5 1s ease-in-out forwards 1.3s;
+    }
+    .item6:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge6 1s ease-in-out forwards 1.3s;
+    }
+    .item7:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge7 1s ease-in-out forwards 1.3s;
+    }
+    .item8:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge8 1s ease-in-out forwards 1.3s;
+    }
+    .item9:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge9 1s ease-in-out forwards 1.3s;
+    }
+    .item10:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge10 1s ease-in-out forwards 1.3s;
+    }
+    .item11:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge11 1s ease-in-out forwards 1.3s;
+    }
+    .item12:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge12 1s ease-in-out forwards 1.3s;
+    }
+    .item13:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge13 1s ease-in-out forwards 1.3s;
+    }
+    .item14:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge14 1s ease-in-out forwards 1.3s;
+    }
+    .item15:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge15 1s ease-in-out forwards 1.3s;
+    }
+    .item16:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge16 1s ease-in-out forwards 1.3s;
+    }
+    .item17:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge17 1s ease-in-out forwards 1.3s;
+    }
+    .item18:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge18 1s ease-in-out forwards 1.3s;
+    }
+    .item19:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge19 1s ease-in-out forwards 1.3s;
+    }
+    .item20:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge20 1s ease-in-out forwards 1.3s;
+    }
+    .item21:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge21 1s ease-in-out forwards 1.3s;
+    }
+    .item22:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge22 1s ease-in-out forwards 1.3s;
+    }
+    .item23:active {
+      background-color: #ff4d55;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge23 1s ease-in-out forwards 1.3s;
+    }
+    .item24:active {
+      background-color: #00b362;
+      animation: shake 1.5s ease-in-out 0s, glow 3s ease-in-out 0s,
+        flipAndEnlarge24 1s ease-in-out forwards 1.3s;
+    }
+
+    @keyframes shake {
+      0%,
+      100% {
         transform: translateX(0);
       }
-      25%, 75% {
+      25%,
+      75% {
         transform: translateX(-5px);
       }
       50% {
         transform: translateX(5px);
       }
     }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px 0 #3498db;
+      }
+      50% {
+        box-shadow: 0 0 20px 10px #3498db;
+      }
+      100% {
+        box-shadow: 0 0 5px 0 #3498db;
+      }
+    }
+    @keyframes flipAndEnlarge1 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/1.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/1.png);
+      }
+    }
+    @keyframes flipAndEnlarge2 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/2.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/2.png);
+      }
+    }
+    @keyframes flipAndEnlarge3 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/3.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/3.png);
+      }
+    }
+    @keyframes flipAndEnlarge4 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/4.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/4.png);
+      }
+    }
+    @keyframes flipAndEnlarge5 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/5.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/5.png);
+      }
+    }
+    @keyframes flipAndEnlarge6 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/6.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/6.png);
+      }
+    }
+    @keyframes flipAndEnlarge7 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/7.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/7.png);
+      }
+    }
+    @keyframes flipAndEnlarge8 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/8.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/8.png);
+      }
+    }
+    @keyframes flipAndEnlarge9 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/9.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/9.png);
+      }
+    }
+    @keyframes flipAndEnlarge10 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/10.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/10.png);
+      }
+    }
+    @keyframes flipAndEnlarge11 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/11.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/11.png);
+      }
+    }
+    @keyframes flipAndEnlarge12 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/12.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/12.png);
+      }
+    }
+    @keyframes flipAndEnlarge13 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/13.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/13.png);
+      }
+    }
+    @keyframes flipAndEnlarge14 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/14.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/14.png);
+      }
+    }
+    @keyframes flipAndEnlarge15 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/15.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/15.png);
+      }
+    }
+    @keyframes flipAndEnlarge16 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/16.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/16.png);
+      }
+    }
+    @keyframes flipAndEnlarge17 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/17.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/17.png);
+      }
+    }
+    @keyframes flipAndEnlarge18 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/18.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/18.png);
+      }
+    }
+    @keyframes flipAndEnlarge19 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/19.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/19.png);
+      }
+    }
+    @keyframes flipAndEnlarge20 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/20.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/20.png);
+      }
+    }
+    @keyframes flipAndEnlarge21 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/21.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/21.png);
+      }
+    }
+    @keyframes flipAndEnlarge22 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/22.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/22.png);
+      }
+    }
+    @keyframes flipAndEnlarge23 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/23.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/23.png);
+      }
+    }
+    @keyframes flipAndEnlarge24 {
+      0% {
+        transform: scale(1);
+        background-color: white;
+        color: transparent;
+        background-image: url(gallery/24.png);
+      }
+      50% {
+        transform: scale(1.7) rotateY(180deg);
+        background-color: transparent;
+        color: transparent;
+      }
+      100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: transparent;
+        color: transparent;
+        background-image: url(gallery/24.png);
+      }
+    }
   </style>
-  <body style="background-image: url(../pictures/julcalback.jpg);">
+  <body style="background-image: url(../pictures/julcalback.jpg)">
     <div class="grid-container">
       <div class="grid-item text">
         <p>Christmas</p>
@@ -189,7 +780,7 @@ animation: shake 0.7s ease-in-out infinite;
       </div>
       <div class="grid-item item1 red">1</div>
       <div class="grid-item item2 green">2</div>
-      <div class="grid-item item3 red">3</div>  
+      <div class="grid-item item3 red">3</div>
       <div class="grid-item item4 green">4</div>
       <div class="grid-item item5 red">5</div>
       <div class="grid-item item6 red">6</div>
@@ -212,6 +803,24 @@ animation: shake 0.7s ease-in-out infinite;
       <div class="grid-item item23 red">23</div>
       <div class="grid-item item24 green">24</div>
     </div>
-    <script src="" async defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const items = document.querySelectorAll(".grid-item");
+
+        items.forEach(function (item) {
+          item.addEventListener("click", function () {
+            // Extract the number from the item class
+            const number = this.className.match(/\d+/)[0];
+
+            // Construct the background image URL
+            const imageUrl = `/gallery/${number}.png`;
+
+            // Apply the background image and flip and enlarge animation
+            this.style.backgroundImage = `url('${imageUrl}')`;
+            this.style.animation = "flipAndEnlarge 1s ease-in-out forwards";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
